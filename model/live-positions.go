@@ -1,7 +1,7 @@
 package model
 
 type LivePositions struct {
-	Weekend Weekend  `json:"weekend,omitempty"`
-	Session Session  `json:"session,omitempty"`
+	Weekend Weekend  `json:"weekend"`
+	Session Session  `json:"session"`
 	Drivers []Driver `json:"drivers,omitempty"`
 }

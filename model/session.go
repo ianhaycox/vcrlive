@@ -3,13 +3,13 @@ package model
 import "github.com/ianhaycox/vcrlive/irsdk/iryaml"
 
 const (
-	invalid = iota
-	getInCar
-	warmup
-	paradeLaps
-	racing
-	checkered
-	coolDown
+	Invalid = iota
+	GetInCar
+	Warmup
+	ParadeLaps
+	Racing
+	Checkered
+	CoolDown
 )
 
 type Session struct {
@@ -18,6 +18,7 @@ type Session struct {
 	SessionType  string `json:"session_type,omitempty"`
 	SessionName  string `json:"session_name,omitempty"`
 	SessionState string `json:"session_state,omitempty"`
+	ErrorText    string `json:"error_text,omitempty"` // Set when SessionState is invalid so the consumer knows about a problem.
 }
 
 func NewSession(sessionNum int, sessions []iryaml.Session) Session {
@@ -39,19 +40,19 @@ func NewSession(sessionNum int, sessions []iryaml.Session) Session {
 
 func (s *Session) SetState(state int) {
 	switch state {
-	case invalid:
+	case Invalid:
 		s.SessionState = "Invalid"
-	case getInCar:
+	case GetInCar:
 		s.SessionState = "Get In Car"
-	case warmup:
+	case Warmup:
 		s.SessionState = "Warmup"
-	case paradeLaps:
+	case ParadeLaps:
 		s.SessionState = "Parade Laps"
-	case racing:
+	case Racing:
 		s.SessionState = "Racing"
-	case checkered:
+	case Checkered:
 		s.SessionState = "Checkered"
-	case coolDown:
+	case CoolDown:
 		s.SessionState = "Cool Down"
 	}
 }

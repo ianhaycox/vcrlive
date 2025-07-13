@@ -9,6 +9,7 @@ type Driver struct {
 	CarClassID    int    `json:"car_class_id,omitempty"`
 	CarID         int    `json:"car_id,omitempty"`
 	ClassPosition int    `json:"class_position,omitempty"`
+	Lap           int    `json:"lap,omitempty"`
 	IRating       int    `json:"irating,omitempty"`
 	ClubID        int    `json:"club_id,omitempty"`
 	CarNumberRaw  int    `json:"car_number_raw,omitempty"`
@@ -43,6 +44,15 @@ func (d Drivers) SetPositions(positions []int) {
 	for carIdx, position := range positions {
 		if driver, ok := d[carIdx]; ok {
 			driver.ClassPosition = position
+			d[carIdx] = driver
+		}
+	}
+}
+
+func (d Drivers) SetLaps(laps []int) {
+	for carIdx, lap := range laps {
+		if driver, ok := d[carIdx]; ok {
+			driver.Lap = lap
 			d[carIdx] = driver
 		}
 	}

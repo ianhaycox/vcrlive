@@ -8,10 +8,8 @@ import (
 	"time"
 
 	"github.com/hidez8891/shm"
-	"github.com/ianhaycox/vcrlive/irsdk/events"
 	"github.com/ianhaycox/vcrlive/irsdk/iryaml"
-
-	// "golang.org/x/exp/mmap"
+	"github.com/ianhaycox/vcrlive/win/events"
 	"gopkg.in/yaml.v3"
 )
 
