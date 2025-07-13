@@ -7,11 +7,15 @@ import (
 	"strings"
 	"time"
 
+	"github.com/hidez8891/shm"
 	"github.com/ianhaycox/vcrlive/irsdk/events"
 	"github.com/ianhaycox/vcrlive/irsdk/iryaml"
-	"golang.org/x/exp/mmap"
+
+	// "golang.org/x/exp/mmap"
 	"gopkg.in/yaml.v3"
 )
+
+const fileMapSize int32 = 1164 * 1024
 
 type SDK interface {
 	RefreshSession()
@@ -43,9 +47,9 @@ func NewIrSDK(r reader) *IRSDK {
 	if r == nil {
 		var err error
 
-		r, err = mmap.Open(fileMapName)
+		r, err = shm.Open(fileMapName, fileMapSize)
 		if err != nil {
-			log.Fatal(err)
+			log.Fatalf("shared memory error. err:%s", err)
 		}
 	}
 
@@ -53,7 +57,7 @@ func NewIrSDK(r reader) *IRSDK {
 
 	err := events.OpenEvent(dataValidEventName)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal("Open event", err)
 	}
 
 	initIRSDK(sdk)

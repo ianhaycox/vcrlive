@@ -40,7 +40,7 @@ func NewDrivers(drivers []iryaml.Driver) Drivers {
 }
 
 func (d Drivers) SetPositions(positions []int) {
-	for position, carIdx := range positions {
+	for carIdx, position := range positions {
 		if driver, ok := d[carIdx]; ok {
 			driver.ClassPosition = position
 			d[carIdx] = driver

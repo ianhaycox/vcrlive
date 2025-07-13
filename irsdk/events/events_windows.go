@@ -2,6 +2,7 @@
 package events
 
 import (
+	"fmt"
 	"time"
 
 	"golang.org/x/sys/windows"
@@ -15,7 +16,7 @@ var (
 func OpenEvent(eventName string) error {
 	utf16, err := windows.UTF16PtrFromString(eventName)
 	if err != nil {
-		return err
+		return fmt.Errorf("bad eventname:%s. err:%v", eventName, err)
 	}
 
 	eventHandle, err = windows.OpenEvent(windows.READ_CONTROL, false, utf16)

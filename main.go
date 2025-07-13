@@ -54,18 +54,19 @@ func main() {
 
 	latestTick := -1
 
-	for {
-		var (
-			irSession iryaml.IRSession
-			session   model.Session
-			weekend   model.Weekend
-			drivers   model.Drivers
-		)
+	var (
+		irSession iryaml.IRSession
+		session   model.Session
+		weekend   model.Weekend
+		drivers   model.Drivers
+	)
 
+	for {
 		sdk.WaitForData(time.Duration(waitMilliseconds) * time.Millisecond)
 
 		tick := sdk.GetLastVersion()
 		if tick != latestTick {
+			latestTick = tick
 			irSession = sdk.GetSession()
 
 			sessionNum, err := sdk.GetVarValue("SessionNum")
@@ -89,6 +90,7 @@ func main() {
 		if err != nil {
 			log.Printf("CarIdxClassPosition:%v", err)
 		}
+		log.Printf("CarIdxClassPosition:%+v", positions)
 
 		drivers.SetPositions(positions.([]int))
 
@@ -98,7 +100,9 @@ func main() {
 			Drivers: slices.Collect(maps.Values(drivers)),
 		}
 
-		fmt.Println(dump(livePositions))
+		log.Println(latestTick)
+
+		fmt.Println(latestTick, dump(livePositions))
 
 		time.Sleep(time.Duration(refreshSeconds) * time.Second)
 	}
