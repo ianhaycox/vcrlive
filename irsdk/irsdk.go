@@ -1,3 +1,5 @@
+//go:generate mockgen -package irsdk -destination irsdk_mock.go -source irsdk.go
+
 // Package irsdk iRacing SDK
 package irsdk
 

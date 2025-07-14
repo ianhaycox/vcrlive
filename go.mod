@@ -15,7 +15,9 @@ require (
 )
 
 require (
+	github.com/google/go-querystring v1.1.0
 	github.com/hidez8891/shm v0.0.0-20200313135933-0ec4df5f28c7
 	github.com/stretchr/testify v1.10.0
 	go.uber.org/mock v0.4.0
+	golang.org/x/oauth2 v0.30.0
 )

@@ -1,5 +1,5 @@
 # Unit test coverage floor percentage (CI should fail if coverage is below this)
-COV_CUTOVER := "5"
+COV_CUTOVER := "40"
 
 # Build vars
 export COMMIT_HASH := $(shell git rev-parse --short HEAD)

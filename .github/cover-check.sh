@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ -z $COV_CUTOVER ]; then
-	COV_CUTOVER="5"
+	COV_CUTOVER="40"
 fi
 
 FNAME=coverage.nomocks.out
