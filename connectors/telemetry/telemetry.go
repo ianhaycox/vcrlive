@@ -4,6 +4,7 @@ package telemetry
 import (
 	"context"
 	"fmt"
+	"log"
 	"maps"
 	"slices"
 	"sort"
@@ -68,6 +69,11 @@ func (t *Telemetry) Run(ctx context.Context, waitMilliseconds int, refreshSecond
 
 		session.SetState(state.(int))
 
+		if state.(int) == model.Invalid {
+			log.Println("State invalid at tick:%d, ignored", tick)
+			continue
+		}
+
 		if state.(int) == model.CoolDown {
 			break
 		}
@@ -82,10 +88,10 @@ func (t *Telemetry) Run(ctx context.Context, waitMilliseconds int, refreshSecond
 
 		drivers.SetPositions(positions.([]int))
 
-		laps, err := t.sdk.GetVarValues("CarIdxLap")
+		laps, err := t.sdk.GetVarValues("CarIdxLapCompleted")
 		if err != nil {
 			session.SetState(model.Invalid)
-			session.ErrorText = fmt.Sprintf("Can not determine CarIdxLap, err:%v, bailing...", err)
+			session.ErrorText = fmt.Sprintf("Can not determine CarIdxLapCompleted, err:%v, bailing...", err)
 
 			break
 		}

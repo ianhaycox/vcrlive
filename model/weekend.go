@@ -3,19 +3,19 @@ package model
 import "github.com/ianhaycox/vcrlive/irsdk/iryaml"
 
 type Weekend struct {
-	TrackID          int    `json:"track_id,omitempty"`
-	TrackDisplayName string `json:"track_display_name,omitempty"`
-	TrackConfigName  string `json:"track_config_name,omitempty"`
-	SeriesID         int    `json:"series_id,omitempty"`
-	SeasonID         int    `json:"season_id,omitempty"`
-	SessionID        int    `json:"session_id,omitempty"`
-	SubSessionID     int    `json:"sub_session_id,omitempty"`
-	Official         int    `json:"official,omitempty"`
-	RaceWeek         int    `json:"race_week,omitempty"`
-	EventType        string `json:"event_type,omitempty"`
-	Category         string `json:"category,omitempty"`
-	NumCarClasses    int    `json:"num_car_classes,omitempty"`
-	NumCarTypes      int    `json:"num_car_types,omitempty"`
+	TrackID          int    `json:"track_id"`
+	TrackDisplayName string `json:"track_display_name"`
+	TrackConfigName  string `json:"track_config_name"`
+	SeriesID         int    `json:"series_id"`
+	SeasonID         int    `json:"season_id"`
+	SessionID        int    `json:"session_id"`
+	SubSessionID     int    `json:"sub_session_id"`
+	Official         int    `json:"official"`
+	RaceWeek         int    `json:"race_week"`
+	EventType        string `json:"event_type"`
+	Category         string `json:"category"`
+	NumCarClasses    int    `json:"num_car_classes"`
+	NumCarTypes      int    `json:"num_car_types"`
 }
 
 func NewWeekend(weekend *iryaml.WeekendInfo) Weekend {

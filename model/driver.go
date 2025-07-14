@@ -3,16 +3,16 @@ package model
 import "github.com/ianhaycox/vcrlive/irsdk/iryaml"
 
 type Driver struct {
-	CarIdx        int    `json:"car_idx,omitempty"`
-	UserName      string `json:"user_name,omitempty"`
-	UserID        int    `json:"user_id,omitempty"`
-	CarClassID    int    `json:"car_class_id,omitempty"`
-	CarID         int    `json:"car_id,omitempty"`
-	ClassPosition int    `json:"class_position,omitempty"`
-	Lap           int    `json:"lap,omitempty"`
-	IRating       int    `json:"irating,omitempty"`
-	ClubID        int    `json:"club_id,omitempty"`
-	CarNumberRaw  int    `json:"car_number_raw,omitempty"`
+	CarIdx        int    `json:"car_idx"`
+	UserName      string `json:"user_name"`
+	UserID        int    `json:"user_id"`
+	CarClassID    int    `json:"car_class_id"`
+	CarID         int    `json:"car_id"`
+	ClassPosition int    `json:"class_position"`
+	LapsCompleted int    `json:"laps_completed"`
+	IRating       int    `json:"irating"`
+	ClubID        int    `json:"club_id"`
+	CarNumberRaw  int    `json:"car_number_raw"`
 }
 
 type Drivers map[int]Driver
@@ -52,7 +52,7 @@ func (d Drivers) SetPositions(positions []int) {
 func (d Drivers) SetLaps(laps []int) {
 	for carIdx, lap := range laps {
 		if driver, ok := d[carIdx]; ok {
-			driver.Lap = lap
+			driver.LapsCompleted = lap
 			d[carIdx] = driver
 		}
 	}

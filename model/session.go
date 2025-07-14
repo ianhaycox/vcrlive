@@ -1,6 +1,8 @@
 package model
 
-import "github.com/ianhaycox/vcrlive/irsdk/iryaml"
+import (
+	"github.com/ianhaycox/vcrlive/irsdk/iryaml"
+)
 
 const (
 	Invalid = iota
@@ -13,12 +15,12 @@ const (
 )
 
 type Session struct {
-	SessionNum   int    `json:"session_num,omitempty"`
-	SessionLaps  string `json:"session_laps,omitempty"`
-	SessionType  string `json:"session_type,omitempty"`
-	SessionName  string `json:"session_name,omitempty"`
-	SessionState string `json:"session_state,omitempty"`
-	ErrorText    string `json:"error_text,omitempty"` // Set when SessionState is invalid so the consumer knows about a problem.
+	SessionNum   int    `json:"session_num"`
+	SessionLaps  string `json:"session_laps"`
+	SessionType  string `json:"session_type"`
+	SessionName  string `json:"session_name"`
+	SessionState string `json:"session_state"`
+	ErrorText    string `json:"error_text"` // Set when SessionState is invalid so the consumer knows about a problem.
 }
 
 func NewSession(sessionNum int, sessions []iryaml.Session) Session {

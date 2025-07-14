@@ -1,0 +1,3222 @@
+{
+  "AirDensity": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "AirDensity",
+    "Desc": "Density of air at start/finish line",
+    "Unit": "kg/m^3",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "AirPressure": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "AirPressure",
+    "Desc": "Pressure of air at start/finish line",
+    "Unit": "Pa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "AirTemp": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "AirTemp",
+    "Desc": "Temperature of air at start/finish line",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Brake": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "Brake",
+    "Desc": "0=brake released to 1=max pedal force",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "BrakeABSactive": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "BrakeABSactive",
+    "Desc": "true if abs is currently reducing brake force pressure",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "BrakeRaw": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "BrakeRaw",
+    "Desc": "Raw brake input 0=brake released to 1=max pedal force",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CamCameraNumber": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "CamCameraNumber",
+    "Desc": "Active camera number",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CamCameraState": {
+    "VarType": 3,
+    "Count": 1,
+    "Name": "CamCameraState",
+    "Desc": "State of camera system",
+    "Unit": "irsdk_CameraState",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CamCarIdx": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "CamCarIdx",
+    "Desc": "Active camera's focus car index",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CamGroupNumber": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "CamGroupNumber",
+    "Desc": "Active camera group number",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarDistAhead": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "CarDistAhead",
+    "Desc": "Distance to first car in front of player in meters",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarDistBehind": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "CarDistBehind",
+    "Desc": "Distance to first car behind player in meters",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxBestLapNum": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxBestLapNum",
+    "Desc": "Cars best lap number",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxBestLapTime": {
+    "VarType": 4,
+    "Count": 64,
+    "Name": "CarIdxBestLapTime",
+    "Desc": "Cars best lap time",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxClass": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxClass",
+    "Desc": "Cars class id by car index",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxClassPosition": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxClassPosition",
+    "Desc": "Cars class position in race by car index",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxEstTime": {
+    "VarType": 4,
+    "Count": 64,
+    "Name": "CarIdxEstTime",
+    "Desc": "Estimated time to reach current location on track",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxF2Time": {
+    "VarType": 4,
+    "Count": 64,
+    "Name": "CarIdxF2Time",
+    "Desc": "Race time behind leader or fastest lap time otherwise",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxFastRepairsUsed": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxFastRepairsUsed",
+    "Desc": "How many fast repairs each car has used",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxGear": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxGear",
+    "Desc": "-1=reverse  0=neutral  1..n=current gear by car index",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxLap": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxLap",
+    "Desc": "Laps started by car index",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxLapCompleted": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxLapCompleted",
+    "Desc": "Laps completed by car index",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxLapDistPct": {
+    "VarType": 4,
+    "Count": 64,
+    "Name": "CarIdxLapDistPct",
+    "Desc": "Percentage distance around lap by car index",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxLastLapTime": {
+    "VarType": 4,
+    "Count": 64,
+    "Name": "CarIdxLastLapTime",
+    "Desc": "Cars last lap time",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxOnPitRoad": {
+    "VarType": 1,
+    "Count": 64,
+    "Name": "CarIdxOnPitRoad",
+    "Desc": "On pit road between the cones by car index",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxP2P_Count": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxP2P_Count",
+    "Desc": "Push2Pass count of usage (or remaining in Race)",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxP2P_Status": {
+    "VarType": 1,
+    "Count": 64,
+    "Name": "CarIdxP2P_Status",
+    "Desc": "Push2Pass active or not",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxPaceFlags": {
+    "VarType": 3,
+    "Count": 64,
+    "Name": "CarIdxPaceFlags",
+    "Desc": "Pacing status flags for each car",
+    "Unit": "irsdk_PaceFlags",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxPaceLine": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxPaceLine",
+    "Desc": "What line cars are pacing in  or -1 if not pacing",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxPaceRow": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxPaceRow",
+    "Desc": "What row cars are pacing in  or -1 if not pacing",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxPosition": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxPosition",
+    "Desc": "Cars position in race by car index",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxQualTireCompound": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxQualTireCompound",
+    "Desc": "Cars Qual tire compound",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxQualTireCompoundLocked": {
+    "VarType": 1,
+    "Count": 64,
+    "Name": "CarIdxQualTireCompoundLocked",
+    "Desc": "Cars Qual tire compound is locked-in",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxRPM": {
+    "VarType": 4,
+    "Count": 64,
+    "Name": "CarIdxRPM",
+    "Desc": "Engine rpm by car index",
+    "Unit": "revs/min",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxSessionFlags": {
+    "VarType": 3,
+    "Count": 64,
+    "Name": "CarIdxSessionFlags",
+    "Desc": "Session flags for each player",
+    "Unit": "irsdk_Flags",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxSteer": {
+    "VarType": 4,
+    "Count": 64,
+    "Name": "CarIdxSteer",
+    "Desc": "Steering wheel angle by car index",
+    "Unit": "rad",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxTireCompound": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxTireCompound",
+    "Desc": "Cars current tire compound",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxTrackSurface": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxTrackSurface",
+    "Desc": "Track surface type by car index",
+    "Unit": "irsdk_TrkLoc",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarIdxTrackSurfaceMaterial": {
+    "VarType": 2,
+    "Count": 64,
+    "Name": "CarIdxTrackSurfaceMaterial",
+    "Desc": "Track surface material type by car index",
+    "Unit": "irsdk_TrkSurf",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CarLeftRight": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "CarLeftRight",
+    "Desc": "Notify if car is to the left or right of driver",
+    "Unit": "irsdk_CarLeftRight",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ChanAvgLatency": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ChanAvgLatency",
+    "Desc": "Communications average latency",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ChanClockSkew": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ChanClockSkew",
+    "Desc": "Communications server clock skew",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ChanLatency": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ChanLatency",
+    "Desc": "Communications latency",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ChanPartnerQuality": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ChanPartnerQuality",
+    "Desc": "Partner communications quality",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ChanQuality": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ChanQuality",
+    "Desc": "Communications quality",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Clutch": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "Clutch",
+    "Desc": "0=disengaged to 1=fully engaged",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ClutchRaw": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ClutchRaw",
+    "Desc": "Raw clutch input 0=disengaged to 1=fully engaged",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CpuUsageBG": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "CpuUsageBG",
+    "Desc": "Percent of available tim bg thread took with a 1 sec avg",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "CpuUsageFG": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "CpuUsageFG",
+    "Desc": "Percent of available tim fg thread took with a 1 sec avg",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "DCDriversSoFar": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "DCDriversSoFar",
+    "Desc": "Number of team drivers who have run a stint",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "DCLapStatus": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "DCLapStatus",
+    "Desc": "Status of driver change lap requirements",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "DisplayUnits": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "DisplayUnits",
+    "Desc": "Default units for the user interface 0 = english 1 = metric",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "DriverMarker": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "DriverMarker",
+    "Desc": "Driver activated flag",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Engine0_RPM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "Engine0_RPM",
+    "Desc": "Engine0Engine rpm",
+    "Unit": "revs/min",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "EngineWarnings": {
+    "VarType": 3,
+    "Count": 1,
+    "Name": "EngineWarnings",
+    "Desc": "Bitfield for warning lights",
+    "Unit": "irsdk_EngineWarnings",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "EnterExitReset": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "EnterExitReset",
+    "Desc": "Indicate action the reset key will take 0 enter 1 exit 2 reset",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "FastRepairAvailable": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "FastRepairAvailable",
+    "Desc": "How many fast repairs left  255 is unlimited",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "FastRepairUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "FastRepairUsed",
+    "Desc": "How many fast repairs used so far",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "FogLevel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "FogLevel",
+    "Desc": "Fog level at start/finish line",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "FrameRate": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "FrameRate",
+    "Desc": "Average frames per second",
+    "Unit": "fps",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "FrontTireSetsAvailable": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "FrontTireSetsAvailable",
+    "Desc": "How many front tire sets are remaining  255 is unlimited",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "FrontTireSetsUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "FrontTireSetsUsed",
+    "Desc": "How many front tire sets used so far",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "FuelLevel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "FuelLevel",
+    "Desc": "Liters of fuel remaining",
+    "Unit": "l",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "FuelLevelPct": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "FuelLevelPct",
+    "Desc": "Percent fuel remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "FuelPress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "FuelPress",
+    "Desc": "Engine fuel pressure",
+    "Unit": "bar",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "FuelUsePerHour": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "FuelUsePerHour",
+    "Desc": "Engine fuel used instantaneous",
+    "Unit": "kg/h",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Gear": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "Gear",
+    "Desc": "-1=reverse  0=neutral  1..n=current gear",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "GpuUsage": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "GpuUsage",
+    "Desc": "Percent of available tim gpu took with a 1 sec avg",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "HandbrakeRaw": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "HandbrakeRaw",
+    "Desc": "Raw handbrake input 0=handbrake released to 1=max force",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "IsDiskLoggingActive": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "IsDiskLoggingActive",
+    "Desc": "0=disk based telemetry file not being written  1=being written",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "IsDiskLoggingEnabled": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "IsDiskLoggingEnabled",
+    "Desc": "0=disk based telemetry turned off  1=turned on",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "IsGarageVisible": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "IsGarageVisible",
+    "Desc": "1=Garage screen is visible",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "IsInGarage": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "IsInGarage",
+    "Desc": "1=Car in garage physics running",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "IsOnTrack": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "IsOnTrack",
+    "Desc": "1=Car on track physics running with player in car",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "IsOnTrackCar": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "IsOnTrackCar",
+    "Desc": "1=Car on track physics running",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "IsReplayPlaying": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "IsReplayPlaying",
+    "Desc": "0=replay not playing  1=replay playing",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFTiresAvailable": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "LFTiresAvailable",
+    "Desc": "How many left front tires are remaining  255 is unlimited",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFTiresUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "LFTiresUsed",
+    "Desc": "How many left front tires used so far",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFbrakeLinePress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LFbrakeLinePress",
+    "Desc": "LF brake line pressure",
+    "Unit": "bar",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFcoldPressure": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LFcoldPressure",
+    "Desc": "LF tire cold pressure  as set in the garage",
+    "Unit": "kPa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFshockDefl": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LFshockDefl",
+    "Desc": "LF shock deflection",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFshockDefl_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "LFshockDefl_ST",
+    "Desc": "LF shock deflection at 360 Hz",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFshockVel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LFshockVel",
+    "Desc": "LF shock velocity",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFshockVel_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "LFshockVel_ST",
+    "Desc": "LF shock velocity at 360 Hz",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFtempCL": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LFtempCL",
+    "Desc": "LF tire left carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFtempCM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LFtempCM",
+    "Desc": "LF tire middle carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFtempCR": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LFtempCR",
+    "Desc": "LF tire right carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFwearL": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LFwearL",
+    "Desc": "LF tire left percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFwearM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LFwearM",
+    "Desc": "LF tire middle percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LFwearR": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LFwearR",
+    "Desc": "LF tire right percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRTiresAvailable": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "LRTiresAvailable",
+    "Desc": "How many left rear tires are remaining  255 is unlimited",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRTiresUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "LRTiresUsed",
+    "Desc": "How many left rear tires used so far",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRbrakeLinePress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LRbrakeLinePress",
+    "Desc": "LR brake line pressure",
+    "Unit": "bar",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRcoldPressure": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LRcoldPressure",
+    "Desc": "LR tire cold pressure  as set in the garage",
+    "Unit": "kPa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRshockDefl": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LRshockDefl",
+    "Desc": "LR shock deflection",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRshockDefl_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "LRshockDefl_ST",
+    "Desc": "LR shock deflection at 360 Hz",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRshockVel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LRshockVel",
+    "Desc": "LR shock velocity",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRshockVel_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "LRshockVel_ST",
+    "Desc": "LR shock velocity at 360 Hz",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRtempCL": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LRtempCL",
+    "Desc": "LR tire left carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRtempCM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LRtempCM",
+    "Desc": "LR tire middle carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRtempCR": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LRtempCR",
+    "Desc": "LR tire right carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRwearL": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LRwearL",
+    "Desc": "LR tire left percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRwearM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LRwearM",
+    "Desc": "LR tire middle percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LRwearR": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LRwearR",
+    "Desc": "LR tire right percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Lap": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "Lap",
+    "Desc": "Laps started count",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapBestLap": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "LapBestLap",
+    "Desc": "Players best lap number",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapBestLapTime": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapBestLapTime",
+    "Desc": "Players best lap time",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapBestNLapLap": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "LapBestNLapLap",
+    "Desc": "Player last lap in best N average lap time",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapBestNLapTime": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapBestNLapTime",
+    "Desc": "Player best N average lap time",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapCompleted": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "LapCompleted",
+    "Desc": "Laps completed count",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapCurrentLapTime": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapCurrentLapTime",
+    "Desc": "Estimate of players current lap time as shown in F3 box",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToBestLap": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDeltaToBestLap",
+    "Desc": "Delta time for best lap",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToBestLap_DD": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDeltaToBestLap_DD",
+    "Desc": "Rate of change of delta time for best lap",
+    "Unit": "s/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToBestLap_OK": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "LapDeltaToBestLap_OK",
+    "Desc": "Delta time for best lap is valid",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToOptimalLap": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDeltaToOptimalLap",
+    "Desc": "Delta time for optimal lap",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToOptimalLap_DD": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDeltaToOptimalLap_DD",
+    "Desc": "Rate of change of delta time for optimal lap",
+    "Unit": "s/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToOptimalLap_OK": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "LapDeltaToOptimalLap_OK",
+    "Desc": "Delta time for optimal lap is valid",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToSessionBestLap": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDeltaToSessionBestLap",
+    "Desc": "Delta time for session best lap",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToSessionBestLap_DD": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDeltaToSessionBestLap_DD",
+    "Desc": "Rate of change of delta time for session best lap",
+    "Unit": "s/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToSessionBestLap_OK": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "LapDeltaToSessionBestLap_OK",
+    "Desc": "Delta time for session best lap is valid",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToSessionLastlLap": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDeltaToSessionLastlLap",
+    "Desc": "Delta time for session last lap",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToSessionLastlLap_DD": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDeltaToSessionLastlLap_DD",
+    "Desc": "Rate of change of delta time for session last lap",
+    "Unit": "s/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToSessionLastlLap_OK": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "LapDeltaToSessionLastlLap_OK",
+    "Desc": "Delta time for session last lap is valid",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToSessionOptimalLap": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDeltaToSessionOptimalLap",
+    "Desc": "Delta time for session optimal lap",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToSessionOptimalLap_DD": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDeltaToSessionOptimalLap_DD",
+    "Desc": "Rate of change of delta time for session optimal lap",
+    "Unit": "s/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDeltaToSessionOptimalLap_OK": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "LapDeltaToSessionOptimalLap_OK",
+    "Desc": "Delta time for session optimal lap is valid",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDist": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDist",
+    "Desc": "Meters traveled from S/F this lap",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapDistPct": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapDistPct",
+    "Desc": "Percentage distance around lap",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapLasNLapSeq": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "LapLasNLapSeq",
+    "Desc": "Player num consecutive clean laps completed for N average",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapLastLapTime": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapLastLapTime",
+    "Desc": "Players last lap time",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LapLastNLapTime": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LapLastNLapTime",
+    "Desc": "Player last N average lap time",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LatAccel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LatAccel",
+    "Desc": "Lateral acceleration (including gravity)",
+    "Unit": "m/s^2",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LatAccel_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "LatAccel_ST",
+    "Desc": "Lateral acceleration (including gravity) at 360 Hz",
+    "Unit": "m/s^2",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LeftTireSetsAvailable": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "LeftTireSetsAvailable",
+    "Desc": "How many left tire sets are remaining  255 is unlimited",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LeftTireSetsUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "LeftTireSetsUsed",
+    "Desc": "How many left tire sets used so far",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LoadNumTextures": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "LoadNumTextures",
+    "Desc": "True if the car_num texture will be loaded",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LongAccel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "LongAccel",
+    "Desc": "Longitudinal acceleration (including gravity)",
+    "Unit": "m/s^2",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "LongAccel_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "LongAccel_ST",
+    "Desc": "Longitudinal acceleration (including gravity) at 360 Hz",
+    "Unit": "m/s^2",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ManifoldPress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ManifoldPress",
+    "Desc": "Engine manifold pressure",
+    "Unit": "bar",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ManualBoost": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "ManualBoost",
+    "Desc": "Hybrid manual boost state",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ManualNoBoost": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "ManualNoBoost",
+    "Desc": "Hybrid manual no boost state",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "MemPageFaultSec": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "MemPageFaultSec",
+    "Desc": "Memory page faults per second",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "MemSoftPageFaultSec": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "MemSoftPageFaultSec",
+    "Desc": "Memory soft page faults per second",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "OilLevel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "OilLevel",
+    "Desc": "Engine oil level",
+    "Unit": "l",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "OilPress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "OilPress",
+    "Desc": "Engine oil pressure",
+    "Unit": "bar",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "OilTemp": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "OilTemp",
+    "Desc": "Engine oil temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "OkToReloadTextures": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "OkToReloadTextures",
+    "Desc": "True if it is ok to reload car textures at this time",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "OnPitRoad": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "OnPitRoad",
+    "Desc": "Is the player car on pit road between the cones",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "P2P_Count": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "P2P_Count",
+    "Desc": "Push2Pass count of usage (or remaining in Race) on your car",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "P2P_Status": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "P2P_Status",
+    "Desc": "Push2Pass active or not on your car",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PaceMode": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PaceMode",
+    "Desc": "Are we pacing or not",
+    "Unit": "irsdk_PaceMode",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitOptRepairLeft": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PitOptRepairLeft",
+    "Desc": "Time left for optional repairs if repairs are active",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitRepairLeft": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PitRepairLeft",
+    "Desc": "Time left for mandatory pit repairs if repairs are active",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitSvFlags": {
+    "VarType": 3,
+    "Count": 1,
+    "Name": "PitSvFlags",
+    "Desc": "Bitfield of pit service checkboxes",
+    "Unit": "irsdk_PitSvFlags",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitSvFuel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PitSvFuel",
+    "Desc": "Pit service fuel add amount",
+    "Unit": "l or kWh",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitSvLFP": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PitSvLFP",
+    "Desc": "Pit service left front tire pressure",
+    "Unit": "kPa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitSvLRP": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PitSvLRP",
+    "Desc": "Pit service left rear tire pressure",
+    "Unit": "kPa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitSvRFP": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PitSvRFP",
+    "Desc": "Pit service right front tire pressure",
+    "Unit": "kPa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitSvRRP": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PitSvRRP",
+    "Desc": "Pit service right rear tire pressure",
+    "Unit": "kPa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitSvTireCompound": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PitSvTireCompound",
+    "Desc": "Pit service pending tire compound",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Pitch": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "Pitch",
+    "Desc": "Pitch orientation",
+    "Unit": "rad",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitchRate": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PitchRate",
+    "Desc": "Pitch rate",
+    "Unit": "rad/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitchRate_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "PitchRate_ST",
+    "Desc": "Pitch rate at 360 Hz",
+    "Unit": "rad/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitsOpen": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "PitsOpen",
+    "Desc": "True if pit stop is allowed for the current player",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PitstopActive": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "PitstopActive",
+    "Desc": "Is the player getting pit stop service",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarClass": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerCarClass",
+    "Desc": "Player car class id",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarClassPosition": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerCarClassPosition",
+    "Desc": "Players class position in race",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarDriverIncidentCount": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerCarDriverIncidentCount",
+    "Desc": "Teams current drivers incident count for this session",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarDryTireSetLimit": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerCarDryTireSetLimit",
+    "Desc": "Players dry tire set limit",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarIdx": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerCarIdx",
+    "Desc": "Players carIdx",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarInPitStall": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "PlayerCarInPitStall",
+    "Desc": "Players car is properly in their pitstall",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarMyIncidentCount": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerCarMyIncidentCount",
+    "Desc": "Players own incident count for this session",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarPitSvStatus": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerCarPitSvStatus",
+    "Desc": "Players car pit service status bits",
+    "Unit": "irsdk_PitSvStatus",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarPosition": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerCarPosition",
+    "Desc": "Players position in race",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarPowerAdjust": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PlayerCarPowerAdjust",
+    "Desc": "Players power adjust",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarSLBlinkRPM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PlayerCarSLBlinkRPM",
+    "Desc": "Shift light blink rpm",
+    "Unit": "revs/min",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarSLFirstRPM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PlayerCarSLFirstRPM",
+    "Desc": "Shift light first light rpm",
+    "Unit": "revs/min",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarSLLastRPM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PlayerCarSLLastRPM",
+    "Desc": "Shift light last light rpm",
+    "Unit": "revs/min",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarSLShiftRPM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PlayerCarSLShiftRPM",
+    "Desc": "Shift light shift rpm",
+    "Unit": "revs/min",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarTeamIncidentCount": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerCarTeamIncidentCount",
+    "Desc": "Players team incident count for this session",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarTowTime": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PlayerCarTowTime",
+    "Desc": "Players car is being towed if time is greater than zero",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerCarWeightPenalty": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "PlayerCarWeightPenalty",
+    "Desc": "Players weight penalty",
+    "Unit": "kg",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerFastRepairsUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerFastRepairsUsed",
+    "Desc": "Players car number of fast repairs used",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerTireCompound": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerTireCompound",
+    "Desc": "Players car current tire compound",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerTrackSurface": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerTrackSurface",
+    "Desc": "Players car track surface type",
+    "Unit": "irsdk_TrkLoc",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PlayerTrackSurfaceMaterial": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "PlayerTrackSurfaceMaterial",
+    "Desc": "Players car track surface material type",
+    "Unit": "irsdk_TrkSurf",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Precipitation": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "Precipitation",
+    "Desc": "Precipitation at start/finish line",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PushToPass": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "PushToPass",
+    "Desc": "Push to pass button state",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "PushToTalk": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "PushToTalk",
+    "Desc": "Push to talk button state",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFTiresAvailable": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RFTiresAvailable",
+    "Desc": "How many right front tires are remaining  255 is unlimited",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFTiresUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RFTiresUsed",
+    "Desc": "How many right front tires used so far",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFbrakeLinePress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RFbrakeLinePress",
+    "Desc": "RF brake line pressure",
+    "Unit": "bar",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFcoldPressure": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RFcoldPressure",
+    "Desc": "RF tire cold pressure  as set in the garage",
+    "Unit": "kPa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFshockDefl": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RFshockDefl",
+    "Desc": "RF shock deflection",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFshockDefl_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "RFshockDefl_ST",
+    "Desc": "RF shock deflection at 360 Hz",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFshockVel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RFshockVel",
+    "Desc": "RF shock velocity",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFshockVel_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "RFshockVel_ST",
+    "Desc": "RF shock velocity at 360 Hz",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFtempCL": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RFtempCL",
+    "Desc": "RF tire left carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFtempCM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RFtempCM",
+    "Desc": "RF tire middle carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFtempCR": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RFtempCR",
+    "Desc": "RF tire right carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFwearL": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RFwearL",
+    "Desc": "RF tire left percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFwearM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RFwearM",
+    "Desc": "RF tire middle percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RFwearR": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RFwearR",
+    "Desc": "RF tire right percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RPM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RPM",
+    "Desc": "Engine rpm",
+    "Unit": "revs/min",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRTiresAvailable": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RRTiresAvailable",
+    "Desc": "How many right rear tires are remaining  255 is unlimited",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRTiresUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RRTiresUsed",
+    "Desc": "How many right rear tires used so far",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRbrakeLinePress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RRbrakeLinePress",
+    "Desc": "RR brake line pressure",
+    "Unit": "bar",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRcoldPressure": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RRcoldPressure",
+    "Desc": "RR tire cold pressure  as set in the garage",
+    "Unit": "kPa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRshockDefl": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RRshockDefl",
+    "Desc": "RR shock deflection",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRshockDefl_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "RRshockDefl_ST",
+    "Desc": "RR shock deflection at 360 Hz",
+    "Unit": "m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRshockVel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RRshockVel",
+    "Desc": "RR shock velocity",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRshockVel_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "RRshockVel_ST",
+    "Desc": "RR shock velocity at 360 Hz",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRtempCL": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RRtempCL",
+    "Desc": "RR tire left carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRtempCM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RRtempCM",
+    "Desc": "RR tire middle carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRtempCR": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RRtempCR",
+    "Desc": "RR tire right carcass temperature",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRwearL": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RRwearL",
+    "Desc": "RR tire left percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRwearM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RRwearM",
+    "Desc": "RR tire middle percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RRwearR": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RRwearR",
+    "Desc": "RR tire right percent tread remaining",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RaceLaps": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RaceLaps",
+    "Desc": "Laps completed in race",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RadioTransmitCarIdx": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RadioTransmitCarIdx",
+    "Desc": "The car index of the current person speaking on the radio",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RadioTransmitFrequencyIdx": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RadioTransmitFrequencyIdx",
+    "Desc": "The frequency index of the current person speaking on the radio",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RadioTransmitRadioIdx": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RadioTransmitRadioIdx",
+    "Desc": "The radio index of the current person speaking on the radio",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RearTireSetsAvailable": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RearTireSetsAvailable",
+    "Desc": "How many rear tire sets are remaining  255 is unlimited",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RearTireSetsUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RearTireSetsUsed",
+    "Desc": "How many rear tire sets used so far",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RelativeHumidity": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RelativeHumidity",
+    "Desc": "Relative Humidity at start/finish line",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ReplayFrameNum": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "ReplayFrameNum",
+    "Desc": "Integer replay frame number (60 per second)",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ReplayFrameNumEnd": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "ReplayFrameNumEnd",
+    "Desc": "Integer replay frame number from end of tape",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ReplayPlaySlowMotion": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "ReplayPlaySlowMotion",
+    "Desc": "0=not slow motion  1=replay is in slow motion",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ReplayPlaySpeed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "ReplayPlaySpeed",
+    "Desc": "Replay playback speed",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ReplaySessionNum": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "ReplaySessionNum",
+    "Desc": "Replay session number",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ReplaySessionTime": {
+    "VarType": 5,
+    "Count": 1,
+    "Name": "ReplaySessionTime",
+    "Desc": "Seconds since replay session start",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RightTireSetsAvailable": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RightTireSetsAvailable",
+    "Desc": "How many right tire sets are remaining  255 is unlimited",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RightTireSetsUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "RightTireSetsUsed",
+    "Desc": "How many right tire sets used so far",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Roll": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "Roll",
+    "Desc": "Roll orientation",
+    "Unit": "rad",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RollRate": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "RollRate",
+    "Desc": "Roll rate",
+    "Unit": "rad/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "RollRate_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "RollRate_ST",
+    "Desc": "Roll rate at 360 Hz",
+    "Unit": "rad/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionFlags": {
+    "VarType": 3,
+    "Count": 1,
+    "Name": "SessionFlags",
+    "Desc": "Session flags",
+    "Unit": "irsdk_Flags",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionJokerLapsRemain": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "SessionJokerLapsRemain",
+    "Desc": "Joker laps remaining to be taken",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionLapsRemain": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "SessionLapsRemain",
+    "Desc": "Old laps left till session ends use SessionLapsRemainEx",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionLapsRemainEx": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "SessionLapsRemainEx",
+    "Desc": "New improved laps left till session ends",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionLapsTotal": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "SessionLapsTotal",
+    "Desc": "Total number of laps in session",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionNum": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "SessionNum",
+    "Desc": "Session number",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionOnJokerLap": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "SessionOnJokerLap",
+    "Desc": "Player is currently completing a joker lap",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionState": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "SessionState",
+    "Desc": "Session state",
+    "Unit": "irsdk_SessionState",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionTick": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "SessionTick",
+    "Desc": "Current update number",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionTime": {
+    "VarType": 5,
+    "Count": 1,
+    "Name": "SessionTime",
+    "Desc": "Seconds since session start",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionTimeOfDay": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SessionTimeOfDay",
+    "Desc": "Time of day in seconds",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionTimeRemain": {
+    "VarType": 5,
+    "Count": 1,
+    "Name": "SessionTimeRemain",
+    "Desc": "Seconds left till session ends",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionTimeTotal": {
+    "VarType": 5,
+    "Count": 1,
+    "Name": "SessionTimeTotal",
+    "Desc": "Total number of seconds in session",
+    "Unit": "s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SessionUniqueID": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "SessionUniqueID",
+    "Desc": "Session ID",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ShiftGrindRPM": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ShiftGrindRPM",
+    "Desc": "RPM of shifter grinding noise",
+    "Unit": "RPM",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ShiftIndicatorPct": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ShiftIndicatorPct",
+    "Desc": "DEPRECATED use DriverCarSLBlinkRPM instead",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ShiftPowerPct": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ShiftPowerPct",
+    "Desc": "Friction torque applied to gears when shifting or grinding",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Skies": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "Skies",
+    "Desc": "Skies (0=clear/1=p cloudy/2=m cloudy/3=overcast)",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SolarAltitude": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SolarAltitude",
+    "Desc": "Sun angle above horizon in radians",
+    "Unit": "rad",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SolarAzimuth": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SolarAzimuth",
+    "Desc": "Sun angle clockwise from north in radians",
+    "Unit": "rad",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Speed": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "Speed",
+    "Desc": "GPS vehicle speed",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringFFBEnabled": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "SteeringFFBEnabled",
+    "Desc": "Force feedback is enabled",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelAngle": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelAngle",
+    "Desc": "Steering wheel angle",
+    "Unit": "rad",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelAngleMax": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelAngleMax",
+    "Desc": "Steering wheel max angle",
+    "Unit": "rad",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelLimiter": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelLimiter",
+    "Desc": "Force feedback limiter strength limits impacts and oscillation",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelMaxForceNm": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelMaxForceNm",
+    "Desc": "Value of strength or max force slider in Nm for FFB",
+    "Unit": "N*m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelPctDamper": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelPctDamper",
+    "Desc": "Force feedback % max damping",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelPctIntensity": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelPctIntensity",
+    "Desc": "Force feedback % max intensity",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelPctSmoothing": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelPctSmoothing",
+    "Desc": "Force feedback % max smoothing",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelPctTorque": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelPctTorque",
+    "Desc": "Force feedback % max torque on steering shaft unsigned",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelPctTorqueSign": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelPctTorqueSign",
+    "Desc": "Force feedback % max torque on steering shaft signed",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelPctTorqueSignStops": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelPctTorqueSignStops",
+    "Desc": "Force feedback % max torque on steering shaft signed stops",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelPeakForceNm": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelPeakForceNm",
+    "Desc": "Peak torque mapping to direct input units for FFB",
+    "Unit": "N*m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelTorque": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "SteeringWheelTorque",
+    "Desc": "Output torque on steering shaft",
+    "Unit": "N*m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelTorque_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "SteeringWheelTorque_ST",
+    "Desc": "Output torque on steering shaft at 360 Hz",
+    "Unit": "N*m",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "SteeringWheelUseLinear": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "SteeringWheelUseLinear",
+    "Desc": "True if steering wheel force is using linear mode",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Throttle": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "Throttle",
+    "Desc": "0=off throttle to 1=full throttle",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "ThrottleRaw": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "ThrottleRaw",
+    "Desc": "Raw throttle input 0=off throttle to 1=full throttle",
+    "Unit": "%",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "TireLF_RumblePitch": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "TireLF_RumblePitch",
+    "Desc": "Players LF Tire Sound rumblestrip pitch",
+    "Unit": "Hz",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "TireLR_RumblePitch": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "TireLR_RumblePitch",
+    "Desc": "Players LR Tire Sound rumblestrip pitch",
+    "Unit": "Hz",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "TireRF_RumblePitch": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "TireRF_RumblePitch",
+    "Desc": "Players RF Tire Sound rumblestrip pitch",
+    "Unit": "Hz",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "TireRR_RumblePitch": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "TireRR_RumblePitch",
+    "Desc": "Players RR Tire Sound rumblestrip pitch",
+    "Unit": "Hz",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "TireSetsAvailable": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "TireSetsAvailable",
+    "Desc": "How many tire sets are remaining  255 is unlimited",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "TireSetsUsed": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "TireSetsUsed",
+    "Desc": "How many tire sets used so far",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "TrackTemp": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "TrackTemp",
+    "Desc": "Deprecated  set to TrackTempCrew",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "TrackTempCrew": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "TrackTempCrew",
+    "Desc": "Temperature of track measured by crew around track",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "TrackWetness": {
+    "VarType": 2,
+    "Count": 1,
+    "Name": "TrackWetness",
+    "Desc": "How wet is the average track surface",
+    "Unit": "irsdk_TrackWetness",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "VelocityX": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "VelocityX",
+    "Desc": "X velocity",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "VelocityX_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "VelocityX_ST",
+    "Desc": "X velocity",
+    "Unit": "m/s at 360 Hz",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "VelocityY": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "VelocityY",
+    "Desc": "Y velocity",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "VelocityY_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "VelocityY_ST",
+    "Desc": "Y velocity",
+    "Unit": "m/s at 360 Hz",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "VelocityZ": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "VelocityZ",
+    "Desc": "Z velocity",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "VelocityZ_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "VelocityZ_ST",
+    "Desc": "Z velocity",
+    "Unit": "m/s at 360 Hz",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "VertAccel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "VertAccel",
+    "Desc": "Vertical acceleration (including gravity)",
+    "Unit": "m/s^2",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "VertAccel_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "VertAccel_ST",
+    "Desc": "Vertical acceleration (including gravity) at 360 Hz",
+    "Unit": "m/s^2",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "VidCapActive": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "VidCapActive",
+    "Desc": "True if video currently being captured",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "VidCapEnabled": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "VidCapEnabled",
+    "Desc": "True if video capture system is enabled",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Voltage": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "Voltage",
+    "Desc": "Engine voltage",
+    "Unit": "V",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "WaterLevel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "WaterLevel",
+    "Desc": "Engine coolant level",
+    "Unit": "l",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "WaterTemp": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "WaterTemp",
+    "Desc": "Engine coolant temp",
+    "Unit": "C",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "WeatherDeclaredWet": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "WeatherDeclaredWet",
+    "Desc": "The steward says rain tires can be used",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "WindDir": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "WindDir",
+    "Desc": "Wind direction at start/finish line",
+    "Unit": "rad",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "WindVel": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "WindVel",
+    "Desc": "Wind velocity at start/finish line",
+    "Unit": "m/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "Yaw": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "Yaw",
+    "Desc": "Yaw orientation",
+    "Unit": "rad",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "YawNorth": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "YawNorth",
+    "Desc": "Yaw orientation relative to north",
+    "Unit": "rad",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "YawRate": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "YawRate",
+    "Desc": "Yaw rate",
+    "Unit": "rad/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "YawRate_ST": {
+    "VarType": 4,
+    "Count": 6,
+    "Name": "YawRate_ST",
+    "Desc": "Yaw rate at 360 Hz",
+    "Unit": "rad/s",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dcAntiRollRear": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dcAntiRollRear",
+    "Desc": "In car rear anti roll bar adjustment",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dcBrakeBias": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dcBrakeBias",
+    "Desc": "In car brake bias adjustment",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dcDashPage": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dcDashPage",
+    "Desc": "In car dash display page adjustment",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dcDashPage2": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dcDashPage2",
+    "Desc": "In car second dash display page adjustment",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dcStarter": {
+    "VarType": 1,
+    "Count": 1,
+    "Name": "dcStarter",
+    "Desc": "In car trigger car starter",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpFastRepair": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpFastRepair",
+    "Desc": "Pitstop fast repair set",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpFuelAddKg": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpFuelAddKg",
+    "Desc": "Pitstop fuel add amount",
+    "Unit": "kg",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpFuelAutoFillActive": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpFuelAutoFillActive",
+    "Desc": "Pitstop auto fill fuel next stop flag",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpFuelAutoFillEnabled": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpFuelAutoFillEnabled",
+    "Desc": "Pitstop auto fill fuel system enabled",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpFuelFill": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpFuelFill",
+    "Desc": "Pitstop fuel fill flag",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpLFTireChange": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpLFTireChange",
+    "Desc": "Pitstop lf tire change request",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpLFTireColdPress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpLFTireColdPress",
+    "Desc": "Pitstop lf tire cold pressure adjustment",
+    "Unit": "Pa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpLRTireChange": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpLRTireChange",
+    "Desc": "Pitstop lr tire change request",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpLRTireColdPress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpLRTireColdPress",
+    "Desc": "Pitstop lr tire cold pressure adjustment",
+    "Unit": "Pa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpRFTireChange": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpRFTireChange",
+    "Desc": "Pitstop rf tire change request",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpRFTireColdPress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpRFTireColdPress",
+    "Desc": "Pitstop rf cold tire pressure adjustment",
+    "Unit": "Pa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpRRTireChange": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpRRTireChange",
+    "Desc": "Pitstop rr tire change request",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpRRTireColdPress": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpRRTireColdPress",
+    "Desc": "Pitstop rr cold tire pressure adjustment",
+    "Unit": "Pa",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  },
+  "dpWindshieldTearoff": {
+    "VarType": 4,
+    "Count": 1,
+    "Name": "dpWindshieldTearoff",
+    "Desc": "Pitstop windshield tearoff",
+    "Unit": "",
+    "Value": null,
+    "Values": null,
+    "RawBytes": null
+  }
+}

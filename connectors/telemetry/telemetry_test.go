@@ -48,8 +48,8 @@ func TestTelemetry(t *testing.T) {
 			Weekend: model.Weekend{TrackID: 1},
 			Session: model.Session{SessionNum: 1, SessionState: "Racing"},
 			Drivers: []model.Driver{
-				{CarIdx: 1, UserName: "1", UserID: 1, ClassPosition: 12, Lap: 67},
-				{CarIdx: 2, UserName: "2", UserID: 2, ClassPosition: 13, Lap: 68},
+				{CarIdx: 1, UserName: "1", UserID: 1, ClassPosition: 12, LapsCompleted: 67},
+				{CarIdx: 2, UserName: "2", UserID: 2, ClassPosition: 13, LapsCompleted: 68},
 			},
 		})
 
