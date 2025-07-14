@@ -160,7 +160,7 @@ func dump(v interface{}) string {
 
 func usage() {
 	w := flag.CommandLine.Output()
-	_, _ = fmt.Fprintf(w, "Usage of %s: [flags] filename \n", progName)
+	_, _ = fmt.Fprintf(w, "Usage of %s: [flags]\n", progName)
 
 	flag.PrintDefaults()
 }
