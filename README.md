@@ -85,7 +85,7 @@ at the end of the Race, the final payload will be,
 }
 ```
 
-[An abbreviated example JSON with Practice, Qualifying and Race](./example.json)
+[An abbreviated race example with JSON payloads for Practice, Qualifying and Race](./example.json.txt)
 
 ## iRacing SDK
 
@@ -94,13 +94,36 @@ to retrieve telemetry. An iRacing account is required to view.
 
 ## Usage
 
+Requires [go v24.1 or greater](https://go.dev/doc/install) to be installed.
+
+From a `cmd` or `PowerShell` prompt build a Windows executable,
+
+`go build -o vcrlive.exe  main.go`
+
+Start iRacing
+
+Then run via,
+
+`vcrlive.exe http://my-site.com/`
+
+## Options
+
 ```
-$ go run main.go --help
+go run main.go --help
 Usage of main: [flags] [url]
   -file string
-        Test data, e.g. race.bin
+    	Test data, e.g. race.bin
+  -redact
+    	Obfuscate driver names for testing
   -refresh int
-        Refresh positions every n seconds (default 10)
+    	Refresh positions every n seconds (default 10)
   -wait int
-        Delay in milliseconds to wait for iRacing data (default 100)
+    	Delay in milliseconds to wait for iRacing data (default 100)
 ```
+
+## Development
+
+`go run main.go -file testdata.bin`
+
+See [pyirsdk](https://github.com/kutu/pyirsdk/blob/master/tutorials/02%20Using%20irsdk%20script.md) for creating `.bin` telemetry files.
+

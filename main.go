@@ -74,4 +74,6 @@ func usage() {
 	_, _ = fmt.Fprintf(w, "Usage of %s: [flags] [url]\n", progName)
 
 	flag.PrintDefaults()
+
+	os.Exit(0)
 }
