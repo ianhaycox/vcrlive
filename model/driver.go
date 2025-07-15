@@ -17,7 +17,7 @@ type Driver struct {
 
 type Drivers map[int]Driver
 
-func NewDrivers(drivers []iryaml.Driver) Drivers {
+func NewDrivers(drivers []iryaml.Driver, redact bool) Drivers {
 	d := make(Drivers, len(drivers))
 
 	for _, driver := range drivers {
@@ -27,7 +27,7 @@ func NewDrivers(drivers []iryaml.Driver) Drivers {
 
 		d[driver.CarIdx] = Driver{
 			CarIdx:       driver.CarIdx,
-			UserName:     driver.UserName,
+			UserName:     d.redact(driver.UserName, redact),
 			UserID:       driver.UserID,
 			CarClassID:   driver.CarClassID,
 			CarID:        driver.CarID,
@@ -56,4 +56,25 @@ func (d Drivers) SetLaps(laps []int) {
 			d[carIdx] = driver
 		}
 	}
+}
+
+func (d Drivers) redact(s string, redact bool) string {
+	if !redact {
+		return s
+	}
+
+	var res []rune
+
+	i := 2
+	for _, c := range s {
+		if i%3 == 0 {
+			res = append(res, rune('*'))
+		} else {
+			res = append(res, c)
+		}
+
+		i++
+	}
+
+	return string(res)
 }

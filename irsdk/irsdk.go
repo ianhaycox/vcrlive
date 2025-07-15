@@ -5,6 +5,7 @@ package irsdk
 
 import (
 	"fmt"
+	"io"
 	"log"
 	"strings"
 	"time"
@@ -15,7 +16,18 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-const fileMapSize int32 = 1164 * 1024
+const (
+	fileMapSize        int32  = 1164 * 1024
+	dataValidEventName string = "Local\\IRSDKDataValidEvent"
+	fileMapName        string = "Local\\IRSDKMemMapFileName"
+	connTimeout               = 30
+	stConnected        int    = 1
+)
+
+type reader interface {
+	io.ReaderAt
+	io.Closer
+}
 
 type SDK interface {
 	RefreshSession()

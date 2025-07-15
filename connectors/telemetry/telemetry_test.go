@@ -35,7 +35,7 @@ func TestTelemetry(t *testing.T) {
 			sdk.EXPECT().GetVarValue("SessionNum").Return(1, nil),
 			sdk.EXPECT().GetVarValue("SessionState").Return(4, nil),
 			sdk.EXPECT().GetVarValues("CarIdxClassPosition").Return([]int{0, 12, 13}, nil),
-			sdk.EXPECT().GetVarValues("CarIdxLap").Return([]int{0, 67, 68}, nil),
+			sdk.EXPECT().GetVarValues("CarIdxLapCompleted").Return([]int{0, 67, 68}, nil),
 
 			// Second loop
 			sdk.EXPECT().WaitForData(time.Duration(10000000)),
@@ -57,7 +57,7 @@ func TestTelemetry(t *testing.T) {
 			Session: model.Session{SessionNum: 1, SessionState: "Cool Down"},
 		})
 
-		tm := NewTelemetry(sdk, vcr)
+		tm := NewTelemetry(sdk, vcr, false)
 
 		err := tm.Run(ctx, 10, 1)
 		assert.NoError(t, err)

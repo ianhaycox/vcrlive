@@ -24,12 +24,14 @@ var (
 	ibtFile          string
 	waitMilliseconds int
 	refreshSeconds   int
+	redact           bool
 )
 
 func main() {
 	flag.StringVar(&ibtFile, "file", "", "Test data, e.g. race.bin")
 	flag.IntVar(&waitMilliseconds, "wait", defaultWaitMilliseconds, "Delay in milliseconds to wait for iRacing data")
 	flag.IntVar(&refreshSeconds, "refresh", defaultRefreshSeconds, "Refresh positions every n seconds")
+	flag.BoolVar(&redact, "redact", false, "Obfuscate driver names for testing")
 	flag.Usage = usage
 	flag.Parse()
 
@@ -57,7 +59,7 @@ func main() {
 
 	defer sdk.Close()
 
-	telemetry := telemetry.NewTelemetry(sdk, client)
+	telemetry := telemetry.NewTelemetry(sdk, client, redact)
 	ctx := context.Background()
 
 	// Keep sending telemetry data until the simulator session ends

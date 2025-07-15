@@ -19,12 +19,14 @@ import (
 type Telemetry struct {
 	sdk     irsdk.SDK
 	service vcrstandings.VcrStandingsAPI
+	redact  bool
 }
 
-func NewTelemetry(sdk irsdk.SDK, service vcrstandings.VcrStandingsAPI) *Telemetry {
+func NewTelemetry(sdk irsdk.SDK, service vcrstandings.VcrStandingsAPI, redact bool) *Telemetry {
 	return &Telemetry{
 		sdk:     sdk,
 		service: service,
+		redact:  redact,
 	}
 }
 
@@ -56,7 +58,7 @@ func (t *Telemetry) Run(ctx context.Context, waitMilliseconds int, refreshSecond
 
 			weekend = model.NewWeekend(&irSession.WeekendInfo)
 			session = model.NewSession(sessionNum.(int), irSession.SessionInfo.Sessions)
-			drivers = model.NewDrivers(irSession.DriverInfo.Drivers)
+			drivers = model.NewDrivers(irSession.DriverInfo.Drivers, t.redact)
 		}
 
 		state, err := t.sdk.GetVarValue("SessionState")
@@ -70,7 +72,7 @@ func (t *Telemetry) Run(ctx context.Context, waitMilliseconds int, refreshSecond
 		session.SetState(state.(int))
 
 		if state.(int) == model.Invalid {
-			log.Println("State invalid at tick:%d, ignored", tick)
+			log.Printf("State invalid at tick:%d, ignored", tick)
 			continue
 		}
 

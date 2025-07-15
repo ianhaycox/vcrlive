@@ -7,7 +7,13 @@ import (
 )
 
 func byte4ToInt(in []byte) int {
-	return int(binary.LittleEndian.Uint32(in))
+	unsigned := binary.LittleEndian.Uint32(in)
+
+	if unsigned > math.MaxInt32 {
+		return -1
+	}
+
+	return int(unsigned)
 }
 
 func byte4ToFloat(in []byte) float32 {
